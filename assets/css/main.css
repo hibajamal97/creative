@@ -1,0 +1,578 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Merriweather', serif;
+}
+
+html{
+  --seccolor: rgba(255, 255, 255, 0.7);
+  --bgcolor1:#f4623a;
+}
+.header{
+    background-color: #3af462;
+}
+
+.container{
+width: 80%;
+margin: auto;
+}
+.navbar .container{
+    overflow:auto ;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom:20px ;
+
+    
+}
+.logo{
+    width: 35%;
+    float: left;
+    color:var(--seccolor);
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 30px;
+}
+.nav{
+    float: left;
+    width: 65%;
+    text-align: right;
+   font-size: 20px;
+
+}
+.nav .list{
+    list-style: none;
+}
+.list-item{
+    display: inline-block;
+}
+.link-nav{
+text-decoration: none;
+color: var(--seccolor);
+margin-right: 15px;
+text-transform: capitalize;
+
+}
+.logo:hover{
+    color: #fff;
+
+}
+.link-nav:hover{
+font-size: 25px;
+color:#fff;
+}
+
+
+.header-content{
+    height: 880px;
+    color: white !important;
+    background-image: url('../img/bg-creative.jpg');
+    background-size: cover;
+    background-position: 0 -15px;
+    
+   
+
+}
+.header-content-items{
+text-align: center;
+padding-top: 200px;
+
+
+}
+.main-title{
+
+    font-size: 60px;
+    text-transform: uppercase;
+    width:40%;
+    margin: auto;
+    font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 500;
+    line-height: 1.2;
+}
+.header-content .line{
+    background-color: var(--bgcolor1);
+    height: 4px;
+    width: 80px;
+    display: block;
+    margin:25px auto;
+
+}
+.main-description{
+    color: var(--seccolor);
+    font-size: 20px;
+    width: 48%;
+    margin: auto;
+}
+  .header-content .link{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    width: fit-content;
+    padding: 20px 50px;
+    border-radius: 35px;
+    margin: 40px auto;
+    background-color: var(--bgcolor1);
+    text-transform: uppercase;
+    font-weight: 700;
+
+   
+}
+
+.header .overlay{
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%);
+    height: 100%;
+}
+ .about{
+    background-color: var(--bgcolor1);
+    color: #fff;
+    text-align: center;
+    padding: 100px ;
+    
+
+}
+.about .description{
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 18px;
+    width: 63%;
+    margin: auto;
+    
+}
+
+
+.about .about-title{
+    font-size: 24px;
+    color: white;
+    
+    
+}
+ .about .line{
+    background-color: black;
+    height: 4px;
+    width: 80px;
+    display: block;
+    margin:25px auto;
+
+}
+.about .link{
+    text-decoration: none;
+    color:black;
+    display: block;
+    width: fit-content;
+    padding: 20px 50px;
+    border-radius: 35px;
+    margin: 30px auto;
+    background-color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin-bottom: 20px;
+}
+/* end about*/
+
+
+
+/* start service */
+
+.services{
+    text-align: center;
+    padding: 150px;
+
+}
+.services .services-title{
+    text-transform: capitalize;
+    font-size: 24px;
+
+}
+.services .line , .contact .line{
+    background-color: #f4623a;
+    height: 4px;
+    width: 80px;
+    display: block;
+    margin:25px auto;
+
+}
+.servivce-icon{
+    color: var(--bgcolor1);
+    font-size: 50px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+.services-item{
+
+    float: left;
+    width: 25%;
+    
+}
+.services-items{
+    overflow:auto;
+}
+.service-description{
+    
+    color: #6c757d;
+    font-weight: 500;
+    font-size: 18px;
+    width: 55%;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+}
+.service-title{
+    font-size: 18px;
+    padding-bottom: 15px;
+    text-transform: capitalize;
+}
+
+.portfoilo-items{
+    overflow: hidden;
+    
+       
+    }
+    .portfolio .portfoilo-item{
+        float: left;
+        width: 33.33%;
+        position: relative;
+        text-transform: capitalize;
+        
+    
+    
+    }
+   .protofolio-main{
+        color: rgba(255, 255, 255, 0.5);
+      font-size: 15px;
+    }
+    .portfolio img{
+        background-size: cover;
+        display: block;
+       
+    }
+    .portfolio .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+       background-color: var(--bgcolor1);
+       opacity: 0;
+       
+    }
+    .overlay-content{
+        box-sizing: border-box;
+        text-align: center;
+        padding-top: 149px;
+    }
+    .protofolio-second{
+      color: #fff;
+      font-size: 20px;
+    }
+    .portfoilo-item:hover .overlay{
+      background-color: var(--bgcolor1);
+      opacity: .8;
+    }
+    /* end portfolio*/
+ 
+
+/* start download */
+
+.download-part{
+    background-color: #212529;
+    color: #fff;
+    text-align: center;
+    height: 250px;
+    padding-top: 150px;
+    font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    
+    font-weight: lighter;
+}
+.download-part-title{
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.download-part .link{
+    text-decoration: none;
+    color:black;
+    display: block;
+    width: fit-content;
+    padding: 20px 50px;
+    border-radius: 35px;
+    margin: 30px auto;
+    background-color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin-bottom: 18px;
+    
+}
+
+/* end download */
+
+/*start contact*/
+ .contact{
+     text-align: center;
+     width: 40%;
+     margin: auto;
+ }
+ .contact-heading{
+  padding-top: 150px;
+  font-size: 30px;
+ }
+ .contact-description{
+     color: #6c757d;
+ }
+
+ .form-contact{
+
+    padding-top: 50px;
+    
+ }
+  .form-contact input , .submit-message{
+      box-sizing: border-box;
+      font-size: 16px;
+      text-transform: capitalize;
+      margin: auto;
+      width: 100%;
+      display: block;
+      height: 60px;
+      margin-bottom: 20px;
+      padding: 16px 12px;
+      color: #6c757d;
+      border-radius: 5px;
+      border: solid var(--bgcolor1).5px;
+
+  }
+  .submit-message{
+      
+      font-weight: bold;
+      color: #fff;
+      background-color: var(--bgcolor1);
+      border-radius: 50px;
+      border-style: none;
+      opacity: .8;
+  }
+  .contact-tybes{
+    margin-bottom: 80px;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+}
+  .contact-tybe{
+    color: #6c757d;
+    font-size: 18px;
+    font-weight: bold;
+    
+  }
+
+  .contact-tybes .fas{
+      margin-top: 50px;
+      margin-bottom: 20px;
+    color: #6c757d;
+    font-size: 50px;
+    display: block;
+  }
+.contact-item{
+    float: left;
+    text-align: center;
+    width: 50%;
+}
+.clr{
+    clear: both;
+}
+ 
+/* end contact*/
+
+.footer{
+    height: 150px;
+    background-color: #cdcdce;
+
+}
+.footer-text{
+    color: #6c757d;
+    margin: auto;
+    padding-top: 70px;
+    width: 20%
+}
+
+/* start portfolio*/
+/*/ Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+    .logo ,.nav{
+        width: 100%;
+        text-align: center;
+    }
+    .logo{
+        margin-bottom: 20px;
+    }
+    .header .main-title{
+        margin-top: 50px;
+        font-size: 35px;
+        width:100%;
+        font-weight: 300;
+    }
+    .main-description, .about .description{
+        color: var(--seccolor);
+        font-size: 20px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .header-content .link , .about .link, .download-part .link{
+        border-radius: 35px;
+        font-weight: 400;
+        font-size: 14px;
+        width: fit-content;
+    
+       
+    }
+    .service-title {
+        font-size: 16px;
+        font-weight: 300;
+
+    }
+     .about .about-title{
+      font-size: 30px;
+    }
+    .about{
+        padding: 0;
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+    .about .description , .service-description{
+        font-size: 16px;
+        width: 100%;
+        margin: auto;
+       
+    }
+   .services{
+       padding-left: 5px;
+       padding-right: 5px;
+   }
+  .services .services-title{
+       font-size: 20px;
+   }
+   .download-part-title{
+       font-size: 30px;
+   }
+   .download-part{
+       height: 200px;
+   }
+   .contact{
+       width: 80%;
+   }
+   .contact-tybe{
+       font-size: 15px;
+   }
+   .contact .fas{
+       font-size: 30px;
+   }
+   
+   .footer{
+       font-size: 14px;
+       margin: auto;
+       width: 100%;
+
+
+   }
+   .portfoilo-item{
+     float: none;
+     
+   }
+
+}
+
+
+
+/*/ Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+
+    .logo ,.nav{
+        width: 100%;
+        text-align: center;
+    }
+    .logo{
+        margin-bottom: 20px;
+    }
+    .header .main-title{
+        margin-top: 50px;
+        font-size: 35px;
+        width:100%;
+        font-weight: 300;
+    }
+    .main-description, .about .description{
+        color: var(--seccolor);
+        font-size: 20px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .header-content .link , .about .link, .download-part .link{
+        border-radius: 35px;
+        font-weight: 400;
+        font-size: 14px;
+        width: fit-content;
+    
+       
+    }
+    .service-title {
+        font-size: 16px;
+        font-weight: 300;
+
+    }
+     .about .about-title{
+      font-size: 30px;
+    }
+    .about{
+        padding: 0;
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+    .about .description , .service-description{
+        font-size: 16px;
+        width: 100%;
+        margin: auto;
+       
+    }
+   .services{
+       padding-left: 5px;
+       padding-right: 5px;
+   }
+  .services .services-title{
+       font-size: 20px;
+   }
+   .download-part-title{
+       font-size: 30px;
+   }
+   .download-part{
+       height: 200px;
+   }
+   .contact{
+       width: 80%;
+   }
+   .contact-tybe{
+       font-size: 15px;
+   }
+   .contact .fas{
+       font-size: 30px;
+   }
+   
+   .footer{
+       font-size: 14px;
+       margin: auto;
+       width: 100%;
+
+
+   }
+   .portfoilo-item{
+     float: none;
+     
+   }
+ }
+
+/*/ Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) { ... }
+
+/*/ Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+
+/*/ Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { ... }
